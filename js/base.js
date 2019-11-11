@@ -791,7 +791,7 @@ function Base() {
 		pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>(^・ω・^ )( ^・ω・^)</span></div>";
 		// 友情链接
 		//pvHtml += '<div id="blogrollInfo"></div>';
-		//pvHtml += '<div id="cnzzInfo"></div>';
+		pvHtml += '<div id="cnzzInfo"></div>';
 		$('#footer').append(pvHtml);
 		window.setInterval(setRunTime, 500);
 		//setBlogroll();
@@ -804,17 +804,17 @@ function Base() {
 			$('#blogRunTimeSpan').text('This blog has running : ' + runDate.daysold + ' d ' + runDate.hrsold + ' h ' + runDate.minsold + ' m ' + runDate.seconds + ' s');
 		}
 
-		/*function setBlogroll() {
-			if(window.cnblogsConfig.bottomBlogroll.length > 0) {
-				var blogrollArr = window.cnblogsConfig.bottomBlogroll;
-				var blogrollHtml = '友情链接：';
-				for(var i = 0; i < blogrollArr.length; i++) {
-					blogrollHtml += '<a href="' + (blogrollArr[i][1]) + '" target="_blank">' + (blogrollArr[i][0]) + '</a>';
-					if(i < blogrollArr.length - 1) blogrollHtml += '<span style="margin: 0 3px;">/</span>';
-				}
-				$('#blogrollInfo').html(blogrollHtml);
-			}
-		}*/
+// 		function setBlogroll() {
+// 			if(window.cnblogsConfig.bottomBlogroll.length > 0) {
+// 				var blogrollArr = window.cnblogsConfig.bottomBlogroll;
+// 				var blogrollHtml = '友情链接：';
+// 				for(var i = 0; i < blogrollArr.length; i++) {
+// 					blogrollHtml += '<a href="' + (blogrollArr[i][1]) + '" target="_blank">' + (blogrollArr[i][0]) + '</a>';
+// 					if(i < blogrollArr.length - 1) blogrollHtml += '<span style="margin: 0 3px;">/</span>';
+// 				}
+// 				$('#blogrollInfo').html(blogrollHtml);
+// 			}
+// 		}
 
 		function setCnzz() {
 			var cnzzStat = $('.id_cnzz_stat_icon a');
