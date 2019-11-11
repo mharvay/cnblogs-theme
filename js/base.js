@@ -794,7 +794,7 @@ function Base() {
 		pvHtml += '<div id="cnzzInfo"></div>';
 		$('#footer').append(pvHtml);
 		window.setInterval(setRunTime, 500);
-		setBlogroll();
+		//setBlogroll();
 		timeIds.setCnzzTId = window.setInterval(setCnzz, 1000);
 
 		function setRunTime() {
