@@ -187,7 +187,18 @@ body{
 
 .icon-list li:before {
     display: inline-block;
+    float: right;
+    padding-right: 4%;
+    padding-left: 5px;
+    padding-top: 8px;
+    text-align: right;
     font-size: 1.2rem;
+    vertical-align: bottom;
+    color: #b8b8b8;
+    content: counter(item,lower-roman);
+    counter-increment: item;
+	
+/*     font-size: 1.2rem;
     vertical-align: bottom;
     color: #666;
     content: counter(item,lower-roman);
@@ -200,17 +211,17 @@ body{
     height: 20px;
     bottom: 8px;
     z-index: 1;
-    padding: 0 40px 0 5px;
+    padding: 0 40px 0 5px; */
 }
 
 .icon-list li a:after {
     display: inline-block;
     content: " .................................................................................................";
     color: rgba(255,255,255,.2);
-    position: absolute;
+/*     position: absolute;
     overflow: hidden;
     width: 237px;
-    vertical-align: bottom;
+    vertical-align: bottom; */
     margin-left: 5px;
 }
 
