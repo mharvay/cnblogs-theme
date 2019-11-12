@@ -41,8 +41,7 @@ function Base() {
 	 * Loading前初始化
 	 */
 	this.loadingBeforeInit = function() {
-		console.info(setMenuData());
-
+		
 		// 设置名称
 		$('#homeTopTitle').text(window.cnblogsConfig.blogUser);
 
