@@ -885,7 +885,7 @@ function Base() {
 		// 添加积分排名
 		function setScorerank() {
 			if(sbScorerank.length > 0 && menuScorerank.html() === '') {
-				menuScorerank.html(getScorerank(sbScorerank, 'icon-label_fill')).prev('.m-list-title').show();
+				menuScorerank.html(getScorerank(sbScorerank, 'icon-collection_fill')).prev('.m-list-title').show();
 				bndongJs.clearIntervalTimeId(timeIds.setMenuScorerankTId);
 			}
 		}
