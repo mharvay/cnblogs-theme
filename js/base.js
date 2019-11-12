@@ -885,8 +885,7 @@ function Base() {
 		// 添加积分排名
 		function setScorerank() {
 			if(sbScorerank.length > 0 && menuScorerank.html() === '') {
-				console.info(getMenuData(sbScorerank, 'icon-label_fill'));
-				menuScorerank.html(getMenuData(sbScorerank, 'icon-label_fill')).prev('.m-list-title').show();
+				menuScorerank.html(getScorerank(sbScorerank, 'icon-label_fill')).prev('.m-list-title').show();
 				bndongJs.clearIntervalTimeId(timeIds.setMenuScorerankTId);
 			}
 		}
@@ -965,6 +964,22 @@ function Base() {
 			html += '</ul></div>';
 			return html;
 		}
+		
+		function getScorerank(obj, icon) {
+			var html = '<div><ul>';
+			var ret = /^[1-9]+[0-9]*$/;
+			obj.each(function(i) {
+				var o = $(obj[i]).text();
+				var textArr = o.split('.');
+				if(ret.test(textArr[0])) textArr.splice(0, 1);
+				var text = $.trim(textArr.join('.'));
+				var iconHtml = '<span class="iconfont ' + icon + '" style="color: #888;font-size: 14px;margin-right: 5px;"></span>';
+				html += '<li>' + (iconHtml + text) + '</li>';
+			});
+			html += '</ul></div>';
+			return html;
+		}
+		
 		return {
 			setIntroduce: setIntroduce,
 			setSidebar: setSidebar,
