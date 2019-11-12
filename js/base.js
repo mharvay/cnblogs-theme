@@ -964,7 +964,7 @@ function Base() {
 			html += '</ul></div>';
 			return html;
 		}
-
+		console.info(setScorerank);
 		return {
 			setIntroduce: setIntroduce,
 			setSidebar: setSidebar,
