@@ -101,7 +101,7 @@ function Base() {
 		timeIds.setMenuTopDiggPostsTId = window.setInterval(setMenuData.setTopDiggPosts, 1000);
 		setMenuData.setCustomData();
 		// 测试打印
-		console.info(timeIds);
+		console.info(setMenuData);
 		
 		// html5-title
 		bndongJs.htmlTitle();
@@ -886,6 +886,7 @@ function Base() {
 		
 		// 添加积分排名
 		function setScorerank() {
+			debugger
 			if(sbScorerank.length > 0 && menuScorerank.html() === '') {
 				menuScorerank.html(getMenuData(sbScorerank, 'icon-label_fill')).prev('.m-list-title').show();
 				bndongJs.clearIntervalTimeId(timeIds.setMenuScorerankTId);
