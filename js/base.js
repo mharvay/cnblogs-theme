@@ -973,10 +973,10 @@ function Base() {
 				var textArr = o.split('.');
 				if(ret.test(textArr[0])) textArr.splice(0, 1);
 				var text = $.trim(textArr.join('.'));
-				var iconHtml = '<span class="iconfont ' + icon + '" style="color: #888;font-size: 14px;margin-right: 5px;"></span>';
+				var iconHtml = '<a href="javascript:void(0);"><span class="iconfont ' + icon + '" style="color: #888;font-size: 14px;margin-right: 5px;"></span>';
 				html += '<li>' + (iconHtml + text) + '</li>';
 			});
-			html += '</ul></div>';
+			html += '</a></ul></div>';
 			return html;
 		}
 		
