@@ -41,6 +41,7 @@ function Base() {
 	 * Loading前初始化
 	 */
 	this.loadingBeforeInit = function() {
+		console.info(setMenuData());
 
 		// 设置名称
 		$('#homeTopTitle').text(window.cnblogsConfig.blogUser);
@@ -964,7 +965,6 @@ function Base() {
 			html += '</ul></div>';
 			return html;
 		}
-		console.info(setScorerank);
 		return {
 			setIntroduce: setIntroduce,
 			setSidebar: setSidebar,
