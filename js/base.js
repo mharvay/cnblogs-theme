@@ -100,9 +100,7 @@ function Base() {
 		timeIds.setMenuTopviewTId = window.setInterval(setMenuData.setTopview, 1000);
 		timeIds.setMenuTopDiggPostsTId = window.setInterval(setMenuData.setTopDiggPosts, 1000);
 		setMenuData.setCustomData();
-		// 测试打印
-		console.info(setMenuData);
-		
+				
 		// html5-title
 		bndongJs.htmlTitle();
 
@@ -886,8 +884,8 @@ function Base() {
 		
 		// 添加积分排名
 		function setScorerank() {
-			debugger
 			if(sbScorerank.length > 0 && menuScorerank.html() === '') {
+				console.info(getMenuData(sbScorerank, 'icon-label_fill'));
 				menuScorerank.html(getMenuData(sbScorerank, 'icon-label_fill')).prev('.m-list-title').show();
 				bndongJs.clearIntervalTimeId(timeIds.setMenuScorerankTId);
 			}
