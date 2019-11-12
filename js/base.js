@@ -100,7 +100,9 @@ function Base() {
 		timeIds.setMenuTopviewTId = window.setInterval(setMenuData.setTopview, 1000);
 		timeIds.setMenuTopDiggPostsTId = window.setInterval(setMenuData.setTopDiggPosts, 1000);
 		setMenuData.setCustomData();
-
+		// 测试打印
+		console.info(timeIds);
+		
 		// html5-title
 		bndongJs.htmlTitle();
 
