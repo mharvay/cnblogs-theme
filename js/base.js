@@ -363,7 +363,7 @@ function Base() {
 			bgImg = "";
 
 		$('.main-header').css({
-			'height': '40vh',
+			'height': '25vh',
 			'background': '#222 url(' + bgImg + ')  center center no-repeat',
 			'background-size': 'cover'
 		});
