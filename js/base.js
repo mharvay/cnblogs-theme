@@ -369,7 +369,7 @@ function Base() {
 		});
 		$('#homeTopTitle').hide();
 		$('.scroll-down').hide();
-		$('#home').css('margin-top', '40vh');
+		$('#home').css('margin-top', '25vh');
 		$('#cb_post_title_url').addClass('post-del-title');
 
 		if(window.cnblogsConfig.essayTopAnimationRendered)
