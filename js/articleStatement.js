@@ -79,7 +79,7 @@ $(document).ready(function(){
     // 设置关于作者
     var aboutHtml = window.cnblogsConfig.essaySuffix.aboutHtml
         ? window.cnblogsConfig.essaySuffix.aboutHtml
-        : '编程路上的小学生，热爱生活，爱读书/旅游，乐于专研。如有问题探讨可<a href="https://msg.cnblogs.com/msg/send/'+tmp[3]+'" target="_blank">直接私信</a>我，亦可下方留言。';
+        : '编程路上的小学生，热爱生活，乐于专研。如有问题探讨可<a href="https://msg.cnblogs.com/msg/send/'+tmp[3]+'" target="_blank">直接私信</a>我，亦可下方留言。';
 
     bottom_html += '<span class="essaySuffix-right-title">关于博主</span>：' + aboutHtml + '<br>';
 
